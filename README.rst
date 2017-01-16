@@ -125,7 +125,7 @@ These artifacts can't be and will not be uploaded to PyPI.
 To build ``opencv_contrib``::
 
     cd build
-    cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules  ../opencv
+    cmake -DBUILD_TESTS=OFF -DBUILD_PERF_TESTS=OFF -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules  ../opencv
 
 
 Manylinux wheels
