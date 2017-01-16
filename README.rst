@@ -11,9 +11,9 @@ OpenCV on wheels
 
 **Unofficial** OpenCV packages for Python.
 
-This repository generates packages which contain pre-compiled OpenCV binary with Python bindings. This enables super fast (usually < 10 seconds) OpenCV installation for Python. 
+This repository generates packages which contain pre-compiled OpenCV binary with Python bindings. This enables super fast (usually < 10 seconds) OpenCV installation for Python.
 
-If you need only OpenCV Python bindings, no separate OpenCV installation is required. 
+If you need only OpenCV Python bindings, no separate OpenCV installation is required.
 
 **IMPORTANT NOTE**
 
@@ -121,6 +121,12 @@ build artifacts use local version identifiers:
 ``3.1.0+14a8d39``
 
 These artifacts can't be and will not be uploaded to PyPI.
+
+To build ``opencv_contrib``::
+
+    cd build
+    cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules  ../opencv
+
 
 Manylinux wheels
 ----------------
